@@ -1,10 +1,11 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
-router.get('/', (req, res) => {
-    res.json("get all tags")
-  // find all tags
-  // be sure to include its associated Product data
+router.get('/', async(req, res) => {
+    // res.json("get all tags")
+    // find all tags
+    // be sure to include its associated Product data
+    
 });
 
 router.get('/:id', (req, res) => {
