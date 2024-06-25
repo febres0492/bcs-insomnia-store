@@ -21,6 +21,7 @@ router.get('/:id', async (req, res) => {
     // find a single product by its `id`
     // be sure to include its associated Category and Tag data
     try {
+        // checking if product exists
         const productData = await Product.findByPk(req.params.id, {
             include: [{ model: Category }, { model: Tag }],
         })
@@ -39,6 +40,7 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
+    
     /* req.body should look like this...
       {
         product_name: "Basketball",
@@ -70,7 +72,12 @@ router.post('/', (req, res) => {
 });
 
 // update product
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
+
+    const targetProduct = await Product.findByPk(req.params.id)
+    if (!targetProduct) {
+        return res.status(404).json({ message: 'No product found with that id!' })
+    }
 
     // update product data
     Product.update(req.body, {
