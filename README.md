@@ -61,8 +61,6 @@ This is an outlines of the updates made to the API routes for categories, produc
 - **Error Handling**: Implemented error handling for when no item is found with the given `id`, returning a 404 status code and a message.
 - **Responses**: Added responses to send back a success message with a 200 status code on success, and error handling with appropriate status codes (400 for categories and tags, 500 for products) on failure.
 
-These updates are part of our ongoing efforts to enhance the robustness, error handling, and asynchronous operation support across all our API route handlers.
-
 <br>
 
 ## Technologies
