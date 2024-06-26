@@ -9,6 +9,7 @@ This is an outlines of the updates made to the API routes for categories, produc
 
 [![License](https://img.shields.io/badge/Watch_live_demo_>>-darkgreen?style=for-the-badge)](https://drive.google.com/file/d/1irMuhpIuUz0AsLz8cmSuiznxgQl5DrKK/view)
 
+
 <br>
 
 ## Table of Content
@@ -20,6 +21,7 @@ This is an outlines of the updates made to the API routes for categories, produc
 - [Usage](#usage)
 - [Author](#author)
 - [Questions](#questions)
+
 
 <br>
 
@@ -61,6 +63,7 @@ This is an outlines of the updates made to the API routes for categories, produc
 - **Error Handling**: Implemented error handling for when no item is found with the given `id`, returning a 404 status code and a message.
 - **Responses**: Added responses to send back a success message with a 200 status code on success, and error handling with appropriate status codes (400 for categories and tags, 500 for products) on failure.
 
+
 <br>
 
 ## Technologies
@@ -69,11 +72,9 @@ Technologies used:
 - **Sequelize**
 
 
-## Getting Started
-
-This section will guide you through setting up the project locally. By the end of this guide, you will have a working version of My Project running on your machine.
-
 <br>
+
+## Getting Started
 
 ### Prerequisites
 
@@ -85,6 +86,7 @@ Before you begin, ensure you have the following installed:
 
 - A text editor like [VSCode](https://code.visualstudio.com/)
 
+
 <br>
 
 ## Installation
@@ -95,6 +97,7 @@ cd bcs-insomnia-store
 npm install
 ```
 
+
 <br>
 
 ## Usage
@@ -102,14 +105,14 @@ Follow these steps:
 ```bash
 npm start
 ```
-<br>
 
+<br>
 
 ## Author
 Carlos Febres
 
-<br>
 
+<br>
 
 ## Questions
 For questions please get in contant.
